@@ -476,7 +476,7 @@ input[type=checkbox]:checked + label:after {
   }
 }
 .popup {
-  display: none;
+  display: block;
   z-index: 990;
   position: absolute;
   top: 50% !important;
@@ -488,6 +488,29 @@ input[type=checkbox]:checked + label:after {
 }
 .popup.pop-event {
   width: 743px;
+}
+.popup.pop-event.finish {
+  box-sizing: border-box;
+}
+.popup.pop-event.finish .popup-cont {
+  padding: 0;
+}
+.popup.pop-event.finish .popup-cont .pre-event {
+  position: relative;
+  background: none;
+  display: block;
+}
+.popup.pop-event.finish .popup-cont .pre-event img:last-child {
+  display: inline-block;
+  position: absolute;
+  top: 45px;
+  right: 20px;
+}
+.popup.pop-event.finish .popup-cont .popup-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
 }
 .popup.pop-terms {
   width: 960px;
@@ -542,7 +565,7 @@ input[type=checkbox]:checked + label:after {
 
 @media screen and (max-width: 750px) {
   .popup {
-    display: none;
+    display: block;
     z-index: 990;
     position: absolute;
     left: 50% !important;
@@ -552,6 +575,37 @@ input[type=checkbox]:checked + label:after {
   }
   .popup.pop-event, .popup.pop-terms {
     width: 100%;
+  }
+  .popup.pop-event-m.finish {
+    box-sizing: border-box;
+  }
+  .popup.pop-event-m.finish .popup-cont {
+    padding: 0;
+  }
+  .popup.pop-event-m.finish .popup-cont .pre-event {
+    position: relative;
+    background: none;
+    display: block;
+  }
+  .popup.pop-event-m.finish .popup-cont .pre-event img {
+    width: 70%;
+  }
+  .popup.pop-event-m.finish .popup-cont .pre-event img:last-child {
+    width: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+    right: -20px;
+  }
+  .popup.pop-event-m.finish .popup-cont .popup-btn {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+  .popup.pop-event-m.finish .popup-cont .popup-btn img {
+    width: 100% !important;
   }
   .popup .popup-cont {
     position: relative;
@@ -634,6 +688,9 @@ input[type=checkbox]:checked + label:after {
   height: 100%;
   background: rgba(0, 0, 0, 0.7921568627);
   z-index: 900;
+}
+.dimmed.finish {
+  display: block;
 }
 
 .content {

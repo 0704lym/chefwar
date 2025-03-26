@@ -1,6 +1,6 @@
 
 .popup {
-  display: none;
+  display: block;
   z-index: 990;
   position: absolute;
   top: 50% !important;
@@ -12,6 +12,33 @@
   //overflow: hidden;
   &.pop-event{
     width:743px;
+
+    &.finish {
+      box-sizing: border-box;
+      .popup-cont {
+        padding: 0;
+        .pre-event {
+          position: relative;
+          background: none;
+          display: block;
+          
+          img {
+            &:last-child {
+              display: inline-block;
+              position: absolute;
+              top: 45px;
+              right: 20px;
+            }
+          }
+        }
+        .popup-btn {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 20px;
+        }
+      }
+    }
   }
   &.pop-terms{
     width:960px;
@@ -68,7 +95,7 @@
 //mobile
 @media screen and (max-width: 750px) {
   .popup {
-    display: none;
+    display: block;
     z-index: 990;
     position: absolute;
     left: 50% !important;
@@ -79,6 +106,41 @@
     &.pop-event,
     &.pop-terms{
       width:100%;
+    }
+
+    &.pop-event-m {
+      &.finish {
+        box-sizing: border-box;
+        .popup-cont {
+          padding: 0;
+          .pre-event {
+            position: relative;
+            background: none;
+            display: block;
+            
+            img {
+              width: 70%;
+              &:last-child {
+                width: 50%;
+                display: inline-block;
+                position: absolute;
+                top: 45px;
+                right: -20px;
+              }
+            }
+          }
+          .popup-btn {
+            position: absolute;
+            width: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            img {
+              width: 100% !important;
+            }
+          }
+        }
+      }
     }
     .popup-cont {
       position: relative;
@@ -163,4 +225,8 @@
   height: 100%;
   background: #000000ca;
   z-index: 900;
+
+  &.finish {
+    display: block;
+  }
 }
