@@ -9,9 +9,9 @@
     font-weight: #{$font-weight};
     font-style: #{$font-style};
 
-    src: url("../font/#{$font-name}.woff") format("woff"),
-    url("../font/#{$font-name}.otf") format("opentype"),
-      url("../font/#{$font-name}.ttf") format("truetype");
+    src: url("/font/#{$font-name}.woff") format("woff"),
+    url("/font/#{$font-name}.otf") format("opentype"),
+      url("/font/#{$font-name}.ttf") format("truetype");
   }
 }
 
@@ -35,7 +35,7 @@
 @mixin backgroundImage($width, $height, $file, $bgsize: cover) {
   width: $width;
   height: $height;
-  background-image: url("../image/#{$file}");
+  background-image: url("/image/#{$file}");
   background-position: center;
   background-repeat: no-repeat;
   background-size: $bgsize;

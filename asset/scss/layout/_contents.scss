@@ -12,7 +12,7 @@
     &:before{
       content:"";
       z-index: 100;
-      background:url("../../asset/image/common/deco_leaf.png") no-repeat 0 0;
+      background:url("/asset/image/common/deco_leaf.png") no-repeat 0 0;
       background-size: contain;
       width: 35%;
       height: 100vh;
@@ -26,7 +26,7 @@
       height: 100vh;
       width: 100vw;
       overflow: hidden;
-      background: url("../../asset/image/common/bg.png") no-repeat 50% 50%;
+      background: url("/asset/image/common/bg.png") no-repeat 50% 50%;
       background-size: cover;
       display: flex;
       justify-content: center;
@@ -47,7 +47,7 @@
       animation: floating 3s infinite ease-in-out;
       &:after{
         content:"";
-        background:url("../../asset/image/common/btn_banner_deco.png") no-repeat 0 0;
+        background:url("/asset/image/common/btn_banner_deco.png") no-repeat 0 0;
         background-size: 62px 62px;
         position: absolute;
         top: -20px;
@@ -59,7 +59,7 @@
       }
       &:before{
         content:"";
-        background:url("../../asset/image/common/btn_banner_deco.png") no-repeat 0 0;
+        background:url("/asset/image/common/btn_banner_deco.png") no-repeat 0 0;
         background-size: 48px 48px;
         position: absolute;
         top: 27px;
@@ -118,7 +118,7 @@
         text-align: center;
         &:before{
           content:"";
-          background: url("../../asset/image/common/cont_img_backlight.png") no-repeat 0 0;
+          background: url("/asset/image/common/cont_img_backlight.png") no-repeat 0 0;
           background-size: cover;
           width: 463px;
           height: 263px;
@@ -375,7 +375,7 @@
       height: 100vh;
       width: 100vw;
       overflow: hidden;
-      background: url("../../asset/image/common-m/bg.png") no-repeat 50% 50%;
+      background: url("/asset/image/common-m/bg.png") no-repeat 50% 50%;
       background-size: cover;
       display: flex;
       justify-content: center;
@@ -472,7 +472,7 @@
         margin-top: -10px;
         &:before{
           content:"";
-          background: url("../../asset/image/common/cont_img_backlight.png") no-repeat 0 0;
+          background: url("/asset/image/common/cont_img_backlight.png") no-repeat 0 0;
           background-size: cover;
           width: 276px;
           height: 153px;
